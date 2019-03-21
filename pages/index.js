@@ -3,14 +3,14 @@ import Header from "../components/header";
 
 function Index() {
   return (
-    <main>
+    <Layout>
       <Header />
       <section>
         <Link href="/about">
           <a>Go to About Me</a>
         </Link>
       </section>
-    </main>
+    </Layout>
   );
 }
 
