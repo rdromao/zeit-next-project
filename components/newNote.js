@@ -19,7 +19,7 @@ class NewNote extends React.Component {
     }
 
     async handleNewNoteSave(){
-        await fetch('http://localhost:3000/notes', {
+        await fetch('/notes', {
             method: 'POST',
             headers: {
             'Accept': 'application/json',

@@ -19,7 +19,7 @@ class Index extends React.Component {
     this.getNotesList()
   }
   async deleteNote(noteToDeleteId) {
-    await fetch('http://localhost:3000/notes/'+noteToDeleteId, {
+    await fetch('/notes/'+noteToDeleteId, {
             method: 'DELETE',
             headers: {
             'Accept': 'application/json',
@@ -30,7 +30,7 @@ class Index extends React.Component {
   }
   async getNotesList() {
     this.setState({ loadingNotes: true })
-    const res = await fetch('http://localhost:3000/notes')
+    const res = await fetch('/notes')
     const notes = await res.json()
     this.setState({ notes: notes })
     this.setState({ loadingNotes: false })
