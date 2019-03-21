@@ -4,7 +4,6 @@ import Layout from "../components/notesAppLayout";
 function Index() {
   return (
     <Layout>
-      <Header />
       <section>
         <Link href="/about">
           <a>Go to About Me</a>
