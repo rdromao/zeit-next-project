@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Header from "../components/header";
 import Layout from "../components/notesAppLayout";
 
 function Index() {
